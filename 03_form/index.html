@@ -5,105 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <h1>Drink Shop</h1>
-    <form action="#" method="GET">
-        <label for="clientName">Provide you name</label>
-        <input type="hidden" name="systemInfo" value="viskar.com">
-        <input type="text" name="clientName" placeholder="Provide you name" id="clientName" required value="Alex">
-        <br>
-        <br>
-        <label>Provide you email:
-            <input type="email" name="clientEmail" placeholder="Provide you email">
-        </label>
-        <br>
-        <br>
-        <label>Quantity:
-            <input type="number" name="productsAmount" placeholder="Provide products amount" max="10">
-        </label>
-        <br>
-        <br>
-        <label>Photo:
-            <input type="file" name="clientPhoto" placeholder="Provide you documents">
-        </label>
-        <br>
-        <br>
-        <label>Create a password:
-            <input type="password" name="clientPassword" placeholder="Create a password">
-        </label>
-        <br>
-        <br>
-        <button type="submit" disabled>
-            <img src="url_to_image" alt="">
-            Submit Form
-        </button>
+    <div class="container">
+        <div class="avatar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png" alt="#">
+        </div>
+        <form class="entire_form" action="#" method="GET">
+            <label class="label-file" for="clientAvatar">Update profile picture
+                <input class="input-file" type="file" name="clientName" id="clientAvatar">
+            </label>
 
-        <button type="reset">
-            Reset Form
-        </button>
-    </form>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+            <label class="label" for="clientName">Provide you name</label>
+            <div class="input_wrapper">
+                <input class="input" type="text" name="clientName" placeholder="Provide you name" id="clientName" required>
+            </div>
 
+            <label class="label" for="productsAmount">Quantity</label>
+            <input class="input" type="number" name="productsAmount" id="productsAmount" placeholder="Provide products amount" max="10">
 
+            <label class="radio-input-label">
+                <input class="radio-input" type="radio" name="beerSort" value="012lsR">
+                <span class="fake-radio"></span>
+                Light Beer
+            </label>
 
-    <form action="#">
-        <fieldset>
-            <legend>Beer sort:</legend>
-            <label>
-                <input type="radio" name="beerSort" value="012lsR">
-                Світле
+            <label class="checkbox-input-label">
+                <input class="checkbox-input" type="checkbox" name="beerSort" value="012lsR">
+                <span class="fake-checkbox"></span>
+                Light Beer
             </label>
-            <label>
-                <input type="radio" name="beerSort" value="Dark" checked>
-                Темне
-            </label>
-            <label>
-                <input type="radio" name="beerSort" value="Non alcohol">
-                Non alcohol
-            </label>
-        </fieldset>
-        <br>
-        <br>
-        <fieldset>
-            <legend>Pizza additions:</legend>
-            <label>
-                <input type="checkbox" name="pizzaIngredients" value="pineapple">
-                Ананас
-            </label>
-            <label>
-                <input type="checkbox" name="pizzaIngredients" value="tomato" checked>
-                Томати
-            </label>
-            <label>
-                <input type="checkbox" name="pizzaIngredients" value="cheese">
-                Сир
-            </label>
-        </fieldset>
-        <br>
-        <br>
-        <fieldset>
-            <legend>Pizza size:</legend>
-            <select name="pizzaSize" multiple>
-                <option value="">Select pizza size</option>
-                <option value="l">Large</option>
-                <option value="m" disabled>Medium</option>
-                <option value="s">Small</option>
-                <option value="ns">Not so Small</option>
-                <option value="es">Extra Small</option>
-                <option value="vs">Very Small</option>
-            </select>
-        </fieldset>
-        <br>
-        <br>
-        <button type="submit">
-            Submit Form
-        </button>
-    </form>
+            <div class="select-wrapper">
+                <select name="pizzaSize" class="custom-select">
+                    <option value="">Select pizza size</option>
+                    <option value="l">Large</option>
+                    <option value="m" disabled>Medium</option>
+                    <option value="s">Small</option>
+                    <option value="ns">Not so Small</option>
+                    <option value="es">Extra Small</option>
+                    <option value="vs">Very Small</option>
+                </select>
+                <span class="custom-arrow"></span>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
