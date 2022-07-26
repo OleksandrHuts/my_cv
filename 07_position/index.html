@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="modal_window">
+        <div class="relative_wrapper">
+            <label>
+                <input type="file">
+                <span class="fake-file">123</span>
+            </label>
+        </div>
+    </div>
+    <!-- <div class="container cont1">
+        <div class="box_wrapper">
+            <div class="box box1">
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="modal_window">
+        <button class="close_button">X</button>
+        <h2>I`m modal</h2>
+        <button>Click me</button>
+    </div> -->
+    <!-- <div class="product_card">
+        Mixer 3000M
+        <img src="data:image/jpeg;base64,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" alt="#">
+        <p>The best mixer EVER!</p>
+
+        <div class="product_descr first">
+            <p>
+                Мощность 450 Вт. Количество скоростей: 
+                5 + Турбо режим. Цвет корпуса: черный. 
+                В комплекте: миксер, два венчика для взбивания,
+                два крюка для замеса теста.
+            </p>
+        </div>
+    </div> -->
+</body>
+</html>
