@@ -1,0 +1,11 @@
+.header_button{
+    &:hover {
+        background-color: orange;
+    }
+}
+
+.input_field{
+    &:active {
+        background-color: #ff0;
+    }
+}

@@ -1,0 +1,21 @@
+.about_me {
+    background-color: #f9f9f9;
+}
+
+.skills {
+    .card_wrapper{
+        display: flex;
+
+        .card {
+            flex-basis: 25%;
+        }
+    }
+}
+
+.header_button {
+    background-color: #fff;
+}
+
+.input_field {
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul, p, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+}
+
+.about_me {
+  background-color: #f9f9f9;
+}
+
+.skills .card_wrapper {
+  display: flex;
+}
+.skills .card_wrapper .card {
+  flex-basis: 25%;
+}
+
+.header_button {
+  background-color: #fff;
+}
+
+.input_field {
+  width: 100%;
+}
+
+.header_button:hover {
+  background-color: orange;
+}
+
+.input_field:active {
+  background-color: #ff0;
+}
+
+@media screen and (max-width: 980px) {
+  .header {
+    display: none;
+  }
+}

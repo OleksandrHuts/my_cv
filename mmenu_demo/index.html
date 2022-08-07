@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/mmenu.css">
+    <link rel="stylesheet" href="./src/styles/style.min.css">
+    <title>Document</title>
+  </head>
+  <body class="body">
+
+    <header class="header">
+      <div class="container flex-row">
+        <a href="#" class="logo">
+          <img src="./src/img/logo.svg" alt="">
+        </a>
+        <nav class="nav_list flex-row">
+            <ul id="menu">
+              <li><a class="nav_link" href="#">Home</a></li>
+              <li><a class="nav_link" href="#">About</a></li>
+              <li><a class="nav_link" href="#">Works</a></li>
+              <li><a class="nav_link" href="#">Blog</a></li>
+              <li><a class="nav_link" href="#">Contact</a></li>
+            </ul>
+            <a class="search_link" href="#">
+              <img src="./src/img/search.svg" alt="">
+            </a>
+        </nav>
+        <div id="header">
+          <a href="#menu">Open the menu</a>
+      </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero_text">Manifest is a newborn theme.
+          Clean, simple and fast.</h2>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog_item flex-row">
+          <div class="blog_item_image">
+            <img src="./src/img/article-img1.jpg" alt="">
+          </div>
+          <div class="blog_item_text">
+            <p class="blog_item_label">Technology, Interface Design</p>
+            <h3 class="blog_item_header">Using UX Design to Build a Sustainable Future</h3>
+            <p class="blog_item_description">Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+          </div>
+        </div>
+
+        <div class="blog_item flex-row">
+          <div class="blog_item_text">
+            <p class="blog_item_label">Technology, Interface Design</p>
+            <h3 class="blog_item_header">Using UX Design to Build a Sustainable Future</h3>
+            <p class="blog_item_description">Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+          </div>
+
+          <div class="blog_item_image">
+            <img src="./src/img/article-img2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/mmenu.js"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu( "#menu", {
+                  "theme": "dark"
+                }, {
+                    // configuration
+                    offCanvas: {
+                        page: {
+                            nodetype: "section"
+                        }
+                    }
+                });
+            }
+        );
+    </script>
+  </body>
+</html>

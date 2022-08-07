@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.min.css">
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <!-- <div class="mobile-menu">
+      <ul class="flex-row nav_list_wrapper">
+        <li><a class="nav_link" href="#">Home</a></li>
+        <li><a class="nav_link" href="#">About</a></li>
+        <li><a class="nav_link" href="#">Works</a></li>
+        <li><a class="nav_link" href="#">Blog</a></li>
+        <li><a class="nav_link" href="#">Contact</a></li>
+      </ul>
+      <a href="#" class="logo">
+        <img src="./src/img/logo.svg" alt="">
+      </a>
+    </div> -->
+    <header class="header">
+      <div class="container flex-row">
+        <a href="#" class="logo">
+          <img src="./src/img/logo.svg" alt="">
+        </a>
+        <nav class="nav_list flex-row">
+            <ul class="flex-row nav_list_wrapper" id="nav">
+              <li><a class="nav_link" href="#">Home</a></li>
+              <li><a class="nav_link" href="#">About</a></li>
+              <li><a class="nav_link" href="#">Works</a></li>
+              <li><a class="nav_link" href="#">Blog</a></li>
+              <li><a class="nav_link" href="#">Contact</a></li>
+            </ul>
+            <a class="search_link" href="#">
+              <img src="./src/img/search.svg" alt="">
+            </a>
+            <!-- HB lines -->
+            <!-- <span class="hamburger" href="#" id="hamburger">
+              <span class="h_line"></span>
+            </span> -->
+            <!-- HB dots -->
+            <!-- <span class="hamburger dots" href="#" id="hamburger-dots">
+              <span class="h_line"></span>
+            </span> -->
+            <!-- HB library -->
+            <button class="hamburger hamburger--emphatic" type="button" id="hamburger">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero_text">Manifest is a newborn theme.
+          Clean, simple and fast.</h2>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog_item flex-row">
+          <div class="blog_item_image">
+            <img src="./src/img/article-img1.jpg" alt="">
+          </div>
+          <div class="blog_item_text">
+            <p class="blog_item_label">Technology, Interface Design</p>
+            <h3 class="blog_item_header">Using UX Design to Build a Sustainable Future</h3>
+            <p class="blog_item_description">Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+          </div>
+        </div>
+
+        <div class="blog_item flex-row">
+          <div class="blog_item_text">
+            <p class="blog_item_label">Technology, Interface Design</p>
+            <h3 class="blog_item_header">Using UX Design to Build a Sustainable Future</h3>
+            <p class="blog_item_description">Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.</p>
+          </div>
+
+          <div class="blog_item_image">
+            <img src="./src/img/article-img2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#hamburger').click(function() {
+          $('#nav').toggleClass('open');
+          $('#hamburger').toggleClass('is-active');
+        })
+      });
+    </script>
+  </body>
+</html>
